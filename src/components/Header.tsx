@@ -21,7 +21,20 @@ export default function Header() {
 								<div className="text-[11px] text-gray-500 dark:text-gray-400">Books here, stories there</div>
 							</div>
 						</Link>
-
+						<div className="flex items-center gap-4">
+							<div className="relative hidden md:flex px-3 py-3 w-[400px] border border-[#e0e0e0] bg-white dark:bg-white rounded-full">
+								<input
+									placeholder="Tìm kiếm..."
+									className="flex-1 rounded-m w-full pr-3 bg-transparent outline-none text-white dark:text-black placeholder-gray-500 dark:placeholder-gray-400 text-sm dark:border-gray-600"
+								/>
+								<span className=" flex items-center justify-center text-gray-400">
+									<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+									</svg>
+								</span>
+							</div>
+							
+						</div>
 						{/* Right side minimal (bell + user) */}
 						<div className="flex items-center gap-4">
 							{/* Dark mode toggle */}
@@ -50,20 +63,7 @@ export default function Header() {
 						</nav>
 
 						{/* Search + actions */}
-						<div className="flex items-center gap-4">
-							<div className="relative hidden md:block">
-								<input
-									placeholder="Tìm kiếm..."
-									className="w-64 h-8 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 pl-3 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:border-gray-600"
-								/>
-								<span className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400">
-									<svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-										<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-									</svg>
-								</span>
-							</div>
-							
-						</div>
+						
 					</div>
 				</div>
 			</div>
